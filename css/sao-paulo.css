@@ -1,0 +1,359 @@
+:root {
+    --amarelo-bandeira: #DCB21E;
+    --verde-bandeira: #3B9C62;
+    --azul-bandeira: #21468a;
+    --branco: #ffffff;
+}
+
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+/* header */
+
+header {
+    background-color: #DCB21E;
+    border-bottom: 3px solid #3B9C62;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.submit{
+    width: 40px;
+    height: 22px;
+    border-radius: 5px;
+    background-color: #21468A;
+    color: #fff;
+    border: none;
+}
+
+.submit:hover{
+    background-color: #005AFF;
+    cursor: pointer;
+    height: 25px;
+}
+
+.pesq{
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+#fname::placeholder{
+    padding: 10px;
+}
+
+/*NAVBAR2*/
+
+.navinha{
+    padding: 10px;
+    border-bottom: 3px solid #DCB21E;
+}
+
+.camp{
+    margin-left: 80px;
+    text-decoration: none;
+    color: #21468A;
+    border: 2px solid #21468A;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+.transfer{
+    margin-left: 170px;
+    text-decoration: none;
+    color: #21468A;
+    border: 2px solid #21468A;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+.clube{
+    margin-left: 200px ;
+    text-decoration: none;
+    color: #21468A;
+    border: 2px solid #21468A;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+.mercado{
+    margin-left: 170px;
+    text-decoration: none;
+    color: #21468A;
+    border: 2px solid #21468A;
+    border-radius: 15px;
+    font-size: 18px;
+    padding-right: 7px;
+}
+
+.fa-trophy{
+    color: #DCB21E;
+    padding-left: 7px;
+}
+
+.fa-right-left{
+    color: #DCB21E;
+    padding-left: 7px;
+}
+
+.fa-shirt{
+    color: #DCB21E;
+    padding-left: 7px;
+}
+
+.fa-dollar-sign{
+    color: #DCB21E;
+    padding-left: 7px;
+}
+
+
+
+/*EC BAHIA NOME E LOGO*/
+
+.nometime h1{
+    font-size: 27px;
+    padding: 10px;
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+.linha-campeonato {
+    background-color: #005AFF;
+    display: flex;
+    width: 40%;
+    height: 03px;
+    margin-top: -8px;
+}
+
+
+.escudo{
+    margin-top: 8px;
+    margin-left: 25px;
+
+}
+
+.info-clube{
+    background-color: #21468A;
+    display: flex;
+    margin-left: 200px;
+    margin-top: -150px;
+    border-radius: 12px;
+    height: 170px;
+    flex-direction: row;
+}
+
+.divisor1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+
+ }
+
+.divisor2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    width: 35%;
+    height: 100%;
+    justify-content: center;
+}
+
+.plantel {
+    color: #fff;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.med_etaria {
+    color: #fff;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.estrangeiros {
+    color: #fff;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.estadio {
+    color: #fff;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+        }
+
+.valor-clube{
+    margin-top: -40px;
+    margin-bottom: 100px;
+    margin-left: 60px;
+    width: 18%;
+    background-color: #DCB21E;
+    border-radius: 8px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valor{
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.mrkt{
+    color: #000;
+    font-size: 20px;
+}
+
+.linha{
+    background-color: #DCB21E;
+    height: 10px;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.escudo-cbf{
+   position: absolute;
+   width: 30px;
+   margin-top: -10px;
+   margin-left: -40px;
+}
+
+.container{
+    background-color: #0063AA;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-top: 10px solid #DCB21E;
+    border-left: 5px solid #DCB21E;
+}
+
+/* TABELA */
+
+table{
+    width: 55%;
+    max-height: 1000px;
+    background-color: #fff;
+    border-collapse: collapse;
+    margin-top: -1205px;
+    margin-left: 30px;
+}
+
+th{
+    border: 1px solid #b6b6b6b2;
+}
+
+td{
+    border: 1px solid #b6b6b6b2;
+    padding-left: 10px;
+}
+
+td img{
+    width: 35px;
+    align-items: center;
+}
+
+.numero1{
+    background-color: #2d89bb;
+    
+}
+
+.numero2{
+    background-color: #6DA0BC;
+}
+
+.numero3{
+    background-color: #ACC9D9;
+}
+
+.numero4{
+    background-color: #D5E4EC;
+}
+
+.number{
+    text-align: center;
+    background-color: #003555;
+    border-radius: 8px;
+    width: 40px;
+    height: 30px;
+    align-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contrato-jogador{
+    text-align: left;
+}
+
+.nome-jogador{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1D75A3;
+}
+
+.posicao-jogador{
+    font-size: 13px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.linha{
+    background-color: #DCB21E;
+    width: 100%;
+}
+
+
+caption{
+    color: transparent;
+}
+
+.prop2{
+    
+    border: 1px solid #005AFF;
+    height: 150px;
+    margin-top: -40px;
+}
+
+footer{
+    background-color: #3B9C62;
+    margin-top: 150px;
+}
+
+/* PROAGANDA DIREITA */
+
+.prop-dir{
+    margin-left: 70%;
+    background: #A7332C;
+    border: 6px solid #DCB21E;
+    height: 1270px;
+    
+}
+
+/* overflow tabela */
+
+.tabela{
+    overflow: auto;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1250px) {
+    
+}

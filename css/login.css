@@ -1,0 +1,197 @@
+.retangulo1{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}   
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.retangulo2{
+    width: 60%;
+    height: 100vh;
+    background: url(/img/foto_pele.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+.tudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.classe{
+    background-color: rgba(255, 255, 0, 0.322);
+    position: absolute;
+    width: 60%;
+    height: 100vh;
+}
+#titulo{
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px black;
+}
+input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+.escritas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#barra1,
+#barra2{
+    outline: none;
+    width: 270px;
+    height: 30px;
+    background-color: rgb(219, 207, 207);
+    border: none;
+    border-radius: 25px;
+    border: 3px solid #21468A;
+    padding: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+
+#barra1:hover{
+    background-color: rgb(226, 222, 222);
+}
+
+#barra2{
+    margin-top: 20px;
+}
+#barra1::placeholder,
+#barra2::placeholder{
+    color: #21468A;
+    font-weight: bold;
+}
+.esqueci{
+    width: 270px;
+    height: 20px;
+    margin-top: 10px;
+}
+.esqueci p {
+    text-align: right;
+    font-size: 17px;
+}
+.esqueci a{
+    text-decoration: none;
+    color: black;
+}
+.esqueci a:hover{
+    color: red;
+}
+.botoes{
+    margin-top: 40px;
+    height: 100px;
+    width: 320px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+#botao1,
+#botao2{
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    border: 3px solid #3B9C62;
+    color: #3B9C62;
+    font-size: 17px;
+    
+    cursor: pointer;
+}
+.tarja{
+    width: 200px;
+    height: 100px;
+    background-color: #21468A;
+    position: absolute;
+    rotate: -45deg;
+    top: -30px;
+    left: -100px;
+}
+.tarja2{
+    width: 200px;
+    height: 100px;
+    background-color: #3B9C62;
+    position: absolute;
+    rotate: -45deg;
+    bottom: -30px;
+    left: 450px;
+    z-index: -1;
+}
+
+
+/*POP-UP*/
+.erro-login {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    z-index: 1; /* Coloca o modal na frente */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente */
+    overflow: auto;
+}
+
+.conteudo {
+    background-color: #f1c40f; /* Cor de fundo amarelo (representando a seleção) */
+    color: #ffffff; /* Texto branco */
+    margin: 15% auto;
+    padding: 40px;
+    border: 4px solid #21468A; /* Bordas verdes, cor representativa da Seleção Brasileira */
+    width: 200px; /* Largura do modal */
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.conteudo h2 {
+    color: #006600; /* Texto verde para o título */
+}
+
+.close {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f1c40f;
+}
+
+.erro-login p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Estilo para o botão de fechar */
+.erro-login p a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Efeito de hover no botão de fechar */
+.erro-login p a:hover {
+    color: #006600;
+}

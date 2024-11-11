@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eef6794ed9.js" crossorigin="anonymous"></script>
+    <title>Compra de Jogador</title>
+    <link rel="stylesheet" href="/css/Compra.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="header">
+            <div class="img_brasil">
+                <img src="/Assets/img/logo_brasil.png" width="40px" />
+            </div>
+            <div class="pesquisa">
+                <div class="img_lupa">
+                    <img src="/Assets/img/lupa.png" width="20px" />
+                </div>
+                <input id="pesquisa_header" type="text" />
+            </div>
+            <div class="icon_perfil">
+                <img src="./Assets/img/icon-perf.png" width="40px" />
+            </div>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="menu_links">
+                    <a href="Pagina_Escolha.html">
+                        <img src="/Assets/img/medalha.png" width="15px"/>
+                        <p>Campeonatos</p>
+                    </a>
+                    <a href="">
+                        <img src="/Assets/img/setas.png" width="15px"/>
+                       <p>Transferencias</p>
+                    </a>
+                    <a href="">
+                        <img src="/Assets/img/camisa.png" width="15px"/>
+                        <p>Clubes</p>
+                    </a>
+                    <a href="">
+                        <img src="/Assets/img/cifra.png" width="15px"/>
+                        <p>Valores de mercado</p>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="player-container">
+        <div class="player-card">
+            <div class="player-photo-container">
+                <img src="/img/Caio_A.jpg" alt="Foto do Jogador" class="player-photo" width="150" height="150">
+            </div>
+            <div class="player-info">
+                <h1 class="player-name">Caio Alexandre</h1>
+                <p class="player-position">Posição: Meia</p>
+                <p class="player-value">Valor de Mercado: €10M</p>
+                <p class="player-value">Time: Fortaleza</p>
+                <p class="player-value">Idade: 25 anos</p>
+            </div>
+            <div class="player-bio">
+                <p>Caio Alexandre Souza e Silva é um futebolista brasileiro que atua como volante. Atualmente joga pelo Bahia.</p>
+            </div>
+            <div class="buttons-container">
+                <button class="buy-button" onclick="comprarJogador()">Comprar</button>
+                <button class="propose-button" onclick="mostrarProposta()">Fazer Proposta</button>
+            </div>
+            <div class="proposal-container" id="proposal-container" style="display:none;">
+                <input type="number" id="proposta-valor" placeholder="Insira seu valor">
+                <button class="submit-proposal-button" onclick="enviarProposta()">Enviar Proposta</button>
+            </div>
+        </div>
+    </div>
+    <div id="mensagem"></div>
+    <script src="script.js"></script>
+</body>
+</html>

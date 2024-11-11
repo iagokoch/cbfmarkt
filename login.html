@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/css/login.css" media="screen" />
+    <style>
+        .rotate {
+            animation: spin 1s ease forwards;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(720deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="tarja"></div>
+    <div class="tudo">
+        <div class="retangulo1">
+            <img src="/img/logo.png" width="180px" >
+            <h1 id="titulo">LOGIN</h1>
+            <img id="userIcon" src="/img/usuario.png" width="70px">
+            <div class="escritas">
+                <input type="number" id="barra1" placeholder="CNPJ">
+                <input type="password" id="barra2" placeholder="Senha">
+            </div>
+            <div class="esqueci"><p><a href="">Esqueci a senha</a></p></div>
+            <div class="botoes">
+                <input type="button" id="botao1" value="Cadastro">
+                <input type="button" id="botao2" value="Login">
+            </div>
+            <div class="tarja2"></div>
+        </div>
+
+        <div class="retangulo2">
+            <div class="classe">
+                <img src="img/foto_pele.png" alt="Pelé">
+            </div>
+        </div>
+
+         <!-- Modal (pop-up) -->
+         <div id="erro-login" class="erro-login">
+            <div class="conteudo">
+                <span class="close">&times;</span>
+                <h2>Senha ou CNPJ invalido!</h2>
+                <p>
+                Por favor preencha os campos corretamente.
+                </p>
+            </div>
+
+    </div>
+
+    <script>
+        document.getElementById("botao2").addEventListener("click", function() {
+            var cnpj = document.getElementById("barra1").value;
+            var senha = document.getElementById("barra2").value;
+
+            //verifica se hà algum campo vazio
+            if(cnpj === "" || senha === "" ){
+                document.getElementById("erro-login").style.display = 'block';
+                return;
+            }else{ //se não houver erro
+                document.getElementById("erro-login").style.display = 'none';
+
+                document.getElementById("titulo").innerText = "Bem-vindo!";
+            document.getElementById("userIcon").classList.add("rotate");
+
+            setTimeout(function() {
+                window.location.href = "Pagina_Escolha.html"; // Redireciona para principal.html após 1 segundo
+            }, 1000); // Tempo de espera para a animação de rotação
+        }
+    });
+
+     // Fechar o modal quando o usuário clicar no "x"
+     document.querySelector(".close").addEventListener("click", function() {
+            document.getElementById("erro-login").style.display = "none";
+        });
+
+        // Fechar o modal se o usuário clicar fora do modal
+        window.addEventListener("click", function(event) {
+            if (event.target == document.getElementById("erro-login")) {
+                document.getElementById("erro-login").style.display = "none";
+            }
+        });         
+            
+    </script>
+</body>
+</html>

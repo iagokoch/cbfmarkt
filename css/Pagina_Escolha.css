@@ -1,0 +1,68 @@
+body {
+    background-color: #bcd324; /* Verde da bandeira do Brasil */
+    background-image:o url('53771523672_59ba919afc_o.jpg');
+    color: #FFFFFF; /* Branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('53771523672_59ba919afc_o.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* opacidade de 30% 
+    background-attachment: fixed;
+}
+*/
+.container {
+    text-align: center;
+    background-color: #002776; /* Azul da bandeira do Brasil */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 1; /* opacidade 100% */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.buttons button {
+    background-color: #FFDF00; /* Amarelo da bandeira do Brasil */
+    color: #002776; /* Azul */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 1; /* opacidade 100% */
+}
+
+.buttons button:hover {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .buttons button:active {
+    background-color: #aaa;
+    color: #333;
+  }

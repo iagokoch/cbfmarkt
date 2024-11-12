@@ -30,7 +30,7 @@
             </div>
             <div class="esqueci"><p><a href="">Esqueci a senha</a></p></div>
             <div class="botoes">
-                <input type="button" id="botao1" value="Cadastro">
+                <input type="button" id="botao1" value="Cadastro" onclick="cadastro()">
                 <input type="button" id="botao2" value="Login">
             </div>
             <div class="tarja2"></div>
@@ -55,6 +55,13 @@
     </div>
 
     <script>
+
+        //Botao Cadastro
+        function cadastro() {
+            window.location.href = "cadastro.html"
+        }
+
+
         document.getElementById("botao2").addEventListener("click", function() {
             var cnpj = document.getElementById("barra1").value;
             var senha = document.getElementById("barra2").value;

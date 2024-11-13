@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" type="text/css" href="/css/cadastro.css" media="screen" />
+    <link rel="stylesheet" href="JS/cadastro.js">
 </head>
 <body>
     <div class="tarja"></div>
-    <div class="voltar">Voltar</div>
+    <div class="voltar" >
+        <input type="button" value="Voltar" id="voltar" onclick="voltar()">
+    </div>
     <div class="tudo">
         <div class="retangulo1">
-            <img src="/img/logo.png" width="180px" >
+            <img src="/img/logos/cbf.png" width="100px" >
             <h1 id="titulo">Cadastro</h1>
-            <img src="/img/usuario.png" width="70px">
+            <img src="/img/logos/usuario.png" width="70px">
             <div class="escritas">
                 <input type="number" id="barra1" placeholder="CNPJ">
-                <input type="password" id="barra2" placeholder="Senha">
+                <input type="email" id="barra2" placeholder="Email">
+                <input type="password" id="barra3" placeholder="Senha">
             </div>
             <div class="botoes">
                 <input type="button" id="botao1" value="Cadastrar" onclick="cadastrar()">
@@ -26,14 +30,14 @@
         </div>
         <div class="retangulo2">
             <div class="classe">
-                <img src="img/foto_pele.png" alt="Pelé">
+                <img src="img/logos/foto_pele.png" alt="Pelé">
             </div>
         </div>
 
         <div id="erro-login" class="erro-login">
             <div class="conteudo">
                 <span class="close">&times;</span>
-                <h2>Senha ou CNPJ invalido!</h2>
+                <h2>Dados incorretos!</h2>
                 <p>
                 Por favor preencha os campos corretamente.
                 </p>
@@ -42,41 +46,31 @@
     </div>
 
     <script>
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-           // Verificação de campos vazios e redirecionamento
-           document.getElementById("botao1").addEventListener("click", function() {
-            var cnpj = document.getElementById("barra1").value;
-            var senha = document.getElementById("barra2").value;
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDa88HZ_x2YqgJb33CoyMJWEfHgwwIZkzs",
+  authDomain: "cbfmarkt.firebaseapp.com",
+  databaseURL: "https://cbfmarkt-default-rtdb.firebaseio.com",
+  projectId: "cbfmarkt",
+  storageBucket: "cbfmarkt.firebasestorage.app",
+  messagingSenderId: "35196141702",
+  appId: "1:35196141702:web:a10373005445e5232e5107",
+  measurementId: "G-QRLCK9R2LB"
+};
 
-            // Verificação de campo vazio
-            if (cnpj === "" || senha === "") {
-                document.getElementById("erro-login").style.display = 'block';
-            } else { 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
 
-                document.getElementById("erro-login").style.display = 'none';
-                // manda para a tela de login
-                setTimeout(function() {
-                    window.location.href = "login.html";
-                }, );
-            }
-        });
-
-
-    // Fechar o modal quando o usuário clicar no "x"
-    document.querySelector(".close").addEventListener("click", function() {
-            document.getElementById("erro-login").style.display = "none";
-        });
-
-        // Fechar o modal se o usuário clicar fora do modal
-        window.addEventListener("click", function(event) {
-            if (event.target == document.getElementById("erro-login")) {
-                document.getElementById("erro-login").style.display = "none";
-            }
-        });  
-
-    
-
-    </script>
+  
 
 </body>
 </html>

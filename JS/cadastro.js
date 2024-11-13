@@ -30,3 +30,13 @@
                 document.getElementById("erro-login").style.display = "none";
             }
         });  
+
+
+
+//minimo tam de senha 
+
+if(document.getElementById("barra3") >=6){
+    return "Senha criada.";
+}else{
+    return "Mínimo 6 caracteres";
+}

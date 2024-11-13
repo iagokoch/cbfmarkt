@@ -4,7 +4,7 @@
     }
 
 
-    document.getElementById("botao1").addEventListener("click", function() {
+    document.getElementById("botao2").addEventListener("click", function() {
         var cnpj = document.getElementById("barra1").value;
         var email = document.getElementById("barra2").value;
         var senha = document.getElementById("barra3").value;
@@ -17,7 +17,7 @@
             document.getElementById("erro-login").style.display = 'none';
             // manda para a tela de login
             setTimeout(function() {
-                window.location.href = "login.html";
+                window.location.href = "index.html";
             }, );
         }
     });
@@ -33,3 +33,5 @@
             document.getElementById("erro-login").style.display = "none";
         }
     });    
+
+

@@ -1,5 +1,6 @@
-
-           // Verificação de campos vazios e redirecionamento
+/* 
+          
+          // Verificação de campos vazios e redirecionamento
            document.getElementById("botao1").addEventListener("click", function() {
             var cnpj = document.getElementById("barra1").value;
             var email = document.getElementById("barra2").value;
@@ -40,3 +41,18 @@ if(document.getElementById("barra3") >=6){
 }else{
     return "Mínimo 6 caracteres";
 }
+*/
+
+
+const senhaInput = document.getElementById('senha');
+const verSenha = document.getElementById('ver_senha');
+
+verSenha.addEventListener('click', () => {
+    // Alterna o tipo do input entre 'password' e 'text'
+    const tipo = senhaInput.type === 'password' ? 'text' : 'password';
+    senhaInput.type = tipo;
+    
+    // Alterna o ícone entre olho aberto e fechado
+    verSenha.classList.toggle('fa-eye');
+    verSenha.classList.toggle('fa-eye-slash');
+});

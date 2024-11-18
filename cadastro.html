@@ -2,51 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" type="text/css" href="/css/cadastro.css" media="screen" />
+    <link rel="shortcut icon" href="img/logos/cbf.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="https://kit.fontawesome.com/eef6794ed9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="tarja"></div>
-    <div class="voltar" >
-        <input type="button" value="Voltar" id="voltar" onclick="voltar()">
-    </div>
-    <div class="tudo">
-        <div class="retangulo1">
-            <img src="/img/logos/cbf.png" width="100px" >
-            <h1 id="titulo">Cadastro</h1>
-            <img src="/img/logos/usuario.png" width="70px">
-            <div class="escritas">
-                <input type="number" id="barra1" placeholder="CNPJ">
-                <input type="email" id="barra2" placeholder="Email">
-                <input type="password" id="barra3" placeholder="Senha">
-            </div>
-            <div class="botoes">
-                <input type="button" id="botao1" value="Cadastrar" onclick="cadastrar()">
-            </div>
-            <div class="tarja2"></div>
-        </div>
-        <div class="retangulo2">
-            <div class="classe">
-                <img src="img/logos/foto_pele.png" alt="Pelé">
+    <div class="container">
+        <div class="left">
+            <img src="img/logos/cbf.png" alt="CBF">
+            <h2>Cadastro</h2>
+            <div class="dados">
+                <input type="text" id="cnpj" placeholder="CNPJ:" class="cnpj">
+                <input type="text" id="email" placeholder="E-MAIL:" class="email">
+                <input type="password" id="senha" placeholder="SENHA:" class="senha">
+                <i class="fa-regular fa-eye" id="ver_senha"></i>
             </div>
         </div>
+        <div class="right">
 
-        <div id="erro-login" class="erro-login">
-            <div class="conteudo">
-                <span class="close">&times;</span>
-                <h2>Dados incorretos!</h2>
-                <p>
-                Por favor preencha os campos corretamente.
-                </p>
-            </div>
-
+        </div>
     </div>
 
     <script src="JS/cadastro.js"></script>
-
-  
 
 </body>
 </html>

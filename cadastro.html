@@ -13,17 +13,36 @@
         <div class="left">
             <img src="img/logos/cbf.png" alt="CBF">
             <h2>Cadastro</h2>
+            <i class="fa-solid fa-circle-user fa-4x" id="user"></i>
             <div class="dados">
                 <input type="text" id="cnpj" placeholder="CNPJ:" class="cnpj">
                 <input type="text" id="email" placeholder="E-MAIL:" class="email">
                 <input type="password" id="senha" placeholder="SENHA:" class="senha">
                 <i class="fa-regular fa-eye" id="ver_senha"></i>
             </div>
+
+            <div class="botoes">
+                <button class="btn-cadastro">Cadastrar</button>
+                <button class="btn-login" onclick="login()">Login</button>
+                <button class="btn-gera-senha" id="gera-senha" onclick="geradorSenha()">
+                    Gerar Senha
+                </button>
+
+            </div>
+
+        <div class="tira1">
+            
+
+        </div>
+
         </div>
         <div class="right">
 
         </div>
+
     </div>
+
+    
 
     <script src="JS/cadastro.js"></script>
 

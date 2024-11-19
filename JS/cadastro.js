@@ -56,3 +56,10 @@ verSenha.addEventListener('click', () => {
     verSenha.classList.toggle('fa-eye');
     verSenha.classList.toggle('fa-eye-slash');
 });
+
+
+if(document.getElementById('senha')>7){
+    return "Senha Criada"
+}else{
+    return "Crie outra senha ou clique para gerar uma aleatória"
+}

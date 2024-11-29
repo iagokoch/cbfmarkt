@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -13,7 +13,7 @@
 
 
 /*cadastro*/
-.left{
+.left {
     border: 2px solid red;
     width: 40%;
     justify-items: center;
@@ -22,46 +22,58 @@
     text-transform: uppercase;
 }
 
-.left img{
+.btn-volta {
+    border: 2px solid green;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+}
+
+.left img {
     width: 70px;
     margin-bottom: 30px;
 }
+
 /* dados que os clubes vão colocar */
-.dados{
+.dados {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.dados input{
+.dados input {
     margin: 10px;
-    height: 27px;  
+    height: 27px;
 }
 
-.cnpj{
+.cnpj {
     border-radius: 7px;
     border: none;
     border: 3px solid #21468A;
     width: 100%;
-    padding-right: 40px; /* Espaço para o ícone */
+    padding-right: 40px;
+    /* Espaço para o ícone */
     font-size: 15px;
 }
 
-.email{
+.email {
     border-radius: 7px;
     border: none;
     border: 3px solid #21468A;
     width: 100%;
-    padding-right: 40px; /* Espaço para o ícone */
+    padding-right: 40px;
+    /* Espaço para o ícone */
     font-size: 17px;
 }
 
-.senha{
+.senha {
     border-radius: 7px;
     border: none;
     border: 3px solid #21468A;
     width: 100%;
-    padding-right: 40px; /* Espaço para o ícone */
+    padding-right: 40px;
+    /* Espaço para o ícone */
     font-size: 17px;
 }
 
@@ -69,16 +81,64 @@
     position: absolute;
     right: -50px;
     /* Ajuste esses valores conforme necessário para alinhar com seu input */
-    bottom: 12px; 
+    bottom: 12px;
     cursor: pointer;
 }
 
-.dados input::placeholder{
-    padding-left:10px;
+.dados input::placeholder {
+    padding-left: 10px;
+}
+
+/*BOTOES*/
+.botoes {
+    width: 75%;
+    height: 100px;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+.btn-cadastro {
+    border: 2px solid #e2b917;
+    width: 25%;
+    height: 50px;
+    margin-left: 100px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #e2b917;
+    border-radius: 6px;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.btn-cadastro:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+
+.btn-login {
+    border: 2px solid #e2b917;
+    width: 25%;
+    height: 50px;
+    margin-left: 120px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #e2b917;
+    border-radius: 6px;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.btn-login:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
 }
 
 /*IMAGEM*/
-.right{
+.right {
     border: 2px solid blue;
     width: 60%;
 }

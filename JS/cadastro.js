@@ -1,10 +1,10 @@
-/* 
-          
+
+    /*
           // Verificação de campos vazios e redirecionamento
-           document.getElementById("botao1").addEventListener("click", function() {
-            var cnpj = document.getElementById("barra1").value;
-            var email = document.getElementById("barra2").value;
-            var senha = document.getElementById("barra3").value;
+           document.getElementById("login").addEventListener("click", function() {
+            var cnpj = document.getElementById("cnpj").value;
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
 
             // Verificação de campo vazio
             if (cnpj === "" || email === "" || senha === "") {
@@ -32,16 +32,12 @@
             }
         });  
 
-
-
-//minimo tam de senha 
-
-if(document.getElementById("barra3") >=6){
-    return "Senha criada.";
-}else{
-    return "Mínimo 6 caracteres";
-}
 */
+
+
+
+
+
 
 
 const senhaInput = document.getElementById('senha');
@@ -58,8 +54,6 @@ verSenha.addEventListener('click', () => {
 });
 
 
-if(document.getElementById('senha')>7){
-    return "Senha Criada"
-}else{
-    return "Crie outra senha ou clique para gerar uma aleatória"
+function volta(){
+    window.location.href = "index.html";
 }

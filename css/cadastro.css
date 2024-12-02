@@ -152,30 +152,3 @@
     background-repeat: no-repeat;
 }
 
-
-
-/*POP UP */
-
-.erro-login {
-    display: none; /* Inicialmente escondido */
-    position: fixed;
-    z-index: 1; /* Coloca o modal na frente */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente */
-    overflow: auto;
-}
-
-.conteudo {
-    background-color: #f1c40f; /* Cor de fundo amarelo (representando a seleção) */
-    color: #ffffff; /* Texto branco */
-    margin: 15% auto;
-    padding: 40px;
-    border: 4px solid #21468A; /* Bordas verdes, cor representativa da Seleção Brasileira */
-    width: 200px; /* Largura do modal */
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}

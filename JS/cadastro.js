@@ -18,15 +18,6 @@
         });
 
 
-
-
-
-
-
-
-
-
-
 const senhaInput = document.getElementById('senha');
 const verSenha = document.getElementById('ver_senha');
 

@@ -1,37 +1,41 @@
-    //Botao Cadastro
-    function cadastro() {
-        window.location.href = "cadastro.html"
-    }
+
+    
+          // ve se tem algum campo vazio
+          document.getElementById("login").addEventListener("click", function() {
+            const cnpj = document.getElementById("cnpj").value;
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
 
 
-    document.getElementById("botao2").addEventListener("click", function() {
-        var cnpj = document.getElementById("barra1").value;
-        var email = document.getElementById("barra2").value;
-        var senha = document.getElementById("barra3").value;
+            if (cnpj === "" || email === "" || senha === "") {
+               window.alert("Dados inválidos");
+            } else { 
+                
+                setTimeout(function() {
+                    window.location.href = "login.html";
+                }, 1000);
+            }
+        });
 
-        // Verificação de campo vazio
-        if (cnpj === "" || email === "" || senha === "") {
-            document.getElementById("erro-login").style.display = 'block';
-        } else { 
+const senhaInput = document.getElementById('senha');
+const verSenha = document.getElementById('ver_senha');
 
-            document.getElementById("erro-login").style.display = 'none';
-            // manda para a tela de login
-            setTimeout(function() {
-                window.location.href = "index.html";
-            }, );
-        }
-    });
+verSenha.addEventListener('click', () => {
+    // 
+    const tipo = senhaInput.type === 'password' ? 'text' : 'password';
+    senhaInput.type = tipo;
+    
+    // Abre e fecha o olho
+    verSenha.classList.toggle('fa-eye');
+    verSenha.classList.toggle('fa-eye-slash');
+});
 
- // Fechar o modal quando o usuário clicar no "x"
- document.querySelector(".close").addEventListener("click", function() {
-        document.getElementById("erro-login").style.display = "none";
-    });
+//Botao volta
+function volta(){
+    window.location.href = "index.html";
+}
 
-    // Fechar o modal se o usuário clicar fora do modal
-    window.addEventListener("click", function(event) {
-        if (event.target == document.getElementById("erro-login")) {
-            document.getElementById("erro-login").style.display = "none";
-        }
-    });    
-
+function cadastro(){
+    window.location.href = "cadastro.html";
+}
 

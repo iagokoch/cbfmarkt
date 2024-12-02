@@ -145,7 +145,6 @@
 
 /*IMAGEM*/
 .right {
-    border: 2px solid blue;
     width: 60%;
     background-image: url('../img/logos/foto_pele.png');
     background-size: cover;

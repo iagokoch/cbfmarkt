@@ -38,26 +38,28 @@ header input{
     border-radius: 20px;
     font-size: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+   z-index:1 ;
 }
 
+.search{
+    position: relative;
+}
 
-
-form {
-    border: 2px solid #ccc;
-    display: inline-block;
-    padding: 4px;
-  }
-  
-  form > input {
-    border: none
-  }
-  
-  form > button {
+.custom-icon{
+    height: 30px;
     border: none;
-    color: #000;
-    padding: 4px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    position: absolute;
+    margin-bottom: 100px;
+    z-index: 2;
     
-  }
+}
+
+form>button{
+    border: none;
+}
 
 .user{
     margin-top: 15px;

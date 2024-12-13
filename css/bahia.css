@@ -316,3 +316,15 @@ p{
     font-size: 28px;
     margin-bottom: 60px;
 }
+
+/*  PROPAGANDA PT1 */
+
+.propaganda1{
+    width: 100%;
+    border-top:4px solid #DCB21E ;
+    background-color: #A7332C;
+    height: 40px;
+    justify-items: center;
+    color: #fff;
+    border-bottom: 8px solid #DCB21E;
+}

@@ -238,27 +238,81 @@ nav{
 /* LOGO CLUBE E INFO DO CLUBE */
 
 .time-logo-info-clube{
-    border: 2px solid red;
+   
+    display: flex;
+    margin-top: 30px;
 }
 
 .time-logo-info-clube>img{
     width: 170px;
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-left: 130px;
+
 }
 
 .info-time{
-    border: 2px solid yellow;
-    margin-left: 350px;
-    height: 100%;
+   background-color: #21468A;
+   border-radius: 18px;
+    margin-left: 200px;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    position: relative;
 }
 
 .jogadores{
-    border: 2px solid green;
+    margin-left: 20px;
+    width: fit-content;
 }
 
 p{
     font-size: 30px;
+}
+
+.direita{
+    color: #fff;
+}
+
+.esquerda{
+   color: #fff;
+    margin-left: 30px;
+}
+
+.estrangeiros{
+
+    width: fit-content;
+}
+
+.med-etaria{
+    margin-left: 20px;
+    width: fit-content;
+    margin-top: 70px;
+}
+
+.estadio{
+
+    width: fit-content;
+    margin-top: 70px;
+}
+
+.valor-mercado{
+    background-color: #DCB21E;
+    border-radius: 16px;
+    margin-left: 30px;
+    width: 300px;
+    align-content: center;
+    justify-items: center;
+    margin-bottom: 70px;
+    position: absolute;
+    right: 60px;
+    top: -37px;
+}
+
+.valor-mercado>h1{
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.valor-mercado>h4{
+    font-size: 28px;
+    margin-bottom: 60px;
 }

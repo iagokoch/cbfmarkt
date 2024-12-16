@@ -328,3 +328,14 @@ p{
     color: #fff;
     border-bottom: 8px solid #DCB21E;
 }
+
+/* TABELA E PROPAGANDA */
+
+.tabela-e-propaganda{
+    border: 2px solid #DCB21E;
+}
+
+.propaganda-atras-tabela{
+    border: 2px solid #0063AA;
+    height: 100%;
+}

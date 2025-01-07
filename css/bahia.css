@@ -333,9 +333,20 @@ p{
 
 .tabela-e-propaganda{
     border: 2px solid #DCB21E;
+    background-color: #0063AA;
+    width: 65%;
+
 }
 
-.propaganda-atras-tabela{
-    border: 2px solid #0063AA;
-    height: 100%;
+
+
+table{
+    border-collapse: collapse;
+    margin-left: 12px;
+    background-color: #fff;
+}
+
+table td, table th{
+    border: 2px solid #E4E4E4;
+    
 }

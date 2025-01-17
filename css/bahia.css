@@ -342,11 +342,113 @@ p{
 
 table{
     border-collapse: collapse;
-    margin-left: 12px;
+    margin-left: 22px;
     background-color: #fff;
+    width: 90%;
 }
 
 table td, table th{
     border: 2px solid #E4E4E4;
-    
+        
 }
+
+
+
+td{
+    width: fit-content;
+}
+
+/* NUMERO DO JOGADOR */
+
+.fundo-num{
+    background-color: #4384A8;
+    text-align: center;
+
+}
+
+.num{
+    background-color:#003555;
+    width: 10px;
+}
+
+.num{
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+
+}
+
+/* INFORMACÃO BASICA DO JOGADOR */
+.nome-posicao{
+    text-align: left;
+}
+
+.info-jogador{
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    margin-top: -55px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.face-jogador{
+    width: 50px;
+    margin-left: 15px;
+}
+
+.nome{
+    margin: 0;
+    font-size: 20px;
+    color: #000;
+    position: relative;
+}
+
+.pos{
+    font-size: 15px;
+}
+
+.nome a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* FIM DAS INFOS BASICAS DO JOGADOR */
+
+/* IDADE */
+.idade{
+    font-weight: 500;
+    text-align: center;
+}
+
+/* NACIONALIDADE */
+
+.nacionalidade{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nacionalidade img{
+    width: 55px;
+}
+
+/* FIM NACIONALIDADE */
+
+
+/* VALOR DE MERCADO DO JOGADOR */
+
+.valor-jogador{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.valor-jogador a{ 
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+}
+
+/* FIM DO VALOR DO JOGADOR */
